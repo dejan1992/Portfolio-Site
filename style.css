@@ -351,6 +351,7 @@ form .row textarea{
 }
 
 form .row textarea{
+  font-family: inherit;
   height: 150px;
 }
 
