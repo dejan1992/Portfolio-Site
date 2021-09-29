@@ -433,6 +433,13 @@ form label{
 }
 }
 
+@media(max-width:1020px){
+#about .row{
+  flex-direction: column;
+  padding: 0;
+  }
+}
+
 @media(max-width:768px){
 body{
   overflow-X: hidden;
