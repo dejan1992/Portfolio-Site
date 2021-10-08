@@ -225,10 +225,25 @@ margin-bottom: 2rem;
 }
 
 .bottom-line{
-  width: 30%;
+  width: 50%;
   background: var(--primary-color);
   height: 2px;
   margin: 0 auto;
+}
+
+/* Skill loader */
+
+#react{
+  position: relative;
+  filter: grayscale(100%);
+}
+
+.skill-loader{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 /* keyframes */
