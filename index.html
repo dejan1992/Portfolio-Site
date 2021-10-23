@@ -23,7 +23,13 @@
 </head>
 
 <body>
+  <!-- Loader -->
+  <div id="loader">
+    <img id="loader-img" src="./img/loading_symbol.gif" loading="eager" alt="">
+    <p>LOADING...</p>
+  </div>
   <header id="header-home">
+
     <nav id="nav" class="navbar top">
       <h2 data-aos="fade-right" data-aos-duration="2000" id="logo"><a href="index.html"> My Portfolio</a></h2>
       <ul>
@@ -97,7 +103,7 @@
       <div id="react">
         <img src="/img/react1.png" alt="git" loading="lazy">
         <!-- Loader -->
-        <img class="skill-loader" src="/img/loading_symbol.gif" alt="git" loading="lazy">
+        <img class="skill-loader" src="/img/loading_symbol1.gif" alt="git" loading="lazy">
         <p>REACT</p>
       </div>
     </div>
@@ -276,7 +282,7 @@
       </div>
       <div class="row">
         <div class="input100">
-          <input data-aos="fade-up" data-aos-duration="1500" type="submit" value="Send">
+          <input id='submit' data-aos="fade-up" data-aos-duration="1500" type="submit" value="Send">
         </div>
       </div>
     </form>
