@@ -5,8 +5,8 @@
 }
 
 :root{
-  --primary-color: #007954;
-  --secundary-color:  #004b34;
+  --primary-color: #1E3163;
+  --secundary-color:  #2D46B9;
 }
 
 img{
@@ -27,32 +27,24 @@ body{
 }
 
 .btn{
-  display:inline-block;
+  color: #fff;
+  display:block;
   text-decoration: none;
-  padding: 0.4rem 0.8rem;
+  padding: 0.5rem 0.9rem;
   border: 1px solid #fff;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 10;
 }
 
 .btn:hover{
- transform: scale(1.1);
+ transform: scale(1.05);
 }
 
 .btn-primary{
-  color: #fff;
-  border-color: #fff;
-}
-
-.btn-secundary{
-  color: #fff;
-  border-color: #fff;
-}
-
-.btn-tertiary{
-  color: #fff;
-  border-color: #fff;
+  background: var(--secundary-color);
+  border: none;
 }
 
 a{
@@ -118,11 +110,11 @@ header ul li a{
   color: #fff;
   padding-bottom: 0.5rem;
   border-bottom: 3px solid transparent;
-  transition: all 0.2s ease-in-out; 
+  transition: all 0.15s ease-in-out; 
 }
 
 header ul li a:hover{
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--secundary-color);
 }
 
  #nav{
@@ -191,7 +183,7 @@ header #header-content{
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding-top: 150px;
+  /* padding-top: 150px; */
 }
 
 .header-title{
@@ -208,7 +200,7 @@ z-index: 3;
 
 .header-btn{
   z-index: 3;
-  }
+}
 
 /* About Section */
 #about .row{
@@ -448,11 +440,10 @@ form #submit{
   font-weight: 300;
   border: 0;
   cursor: pointer;
-  transition: all 0.15s;
 }
-form #submit:hover{
+/* form #submit:hover{
   background:var(--secundary-color);
-}
+} */
 
 
 form label{
@@ -480,7 +471,7 @@ form label{
 }
 
 #footer ul li a:hover{
-  color:var(--primary-color);
+  color:var(--secundary-color);
 }
 #footer ul{
   list-style: none;
@@ -521,11 +512,11 @@ form label{
   position: absolute;
   top: 50px;
   right: 30px;
-  color: #fff;
+  color: red;
   display: flex;
   width: 50px;
   height: 50px;
-  background-color: var(--primary-color);
+  background-color: var(--secundary-color);
   border-radius:50%;
   align-items:center;
   justify-content: center;
@@ -534,7 +525,7 @@ form label{
 
 #back-button:hover{
   cursor: pointer;
-  background: var(--secundary-color);
+  background: var(--primary-color);
 }
 
 /* max-width:1068px */
@@ -561,12 +552,13 @@ body{
 }
 
 .header-title{
-  font-size: 2.2rem;
-  letter-spacing:3px;
+  font-size: 2rem;
+  letter-spacing: 0px;
 }
 
 .header-text{
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
   #nav{
@@ -657,16 +649,26 @@ form .row textarea{
 
 #back-button{
   top: 75px;
+  right: 10px;
+
 }
 }
 
+/* max-width:321px */
 @media(max-width:321px){
   header ul li{
     margin: 0 7px;
   }
 
   .header-title{
-    font-size: 1.7rem;
-    letter-spacing:0px;
+    font-size: 1.3rem;
+  }
+
+  .header-text{
+    font-size: 1.1rem;
+  }
+
+  #back-button{
+    right: 5px;
   }
   }
