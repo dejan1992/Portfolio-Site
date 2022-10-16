@@ -1,242 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dejan Cetojevic | Portfolio Site</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css">
-  <title>Dejan Cetojevic | Portfolio Site</title>
-</head>
-
-<body>
-  <!-- Loader -->
-  <!-- <div id="loader">
+  <body>
+    <!-- Loader -->
+    <!-- <div id="loader">
     <img id="loader-img" src="./img/loading_symbol.gif" loading="eager" alt="">
   </div> -->
-  <header id="header-home">
+    <header id="header-home">
+      <nav id="nav" class="navbar top">
+        <h2 id="logo"><a href="#header-home"> My Portfolio</a></h2>
+        <ul>
+          <li><a href="#header-home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="header-content">
+        <h1 class="header-title" data-aos="fade-left" data-aos-duration="2000">
+          I Am Dejan Ćetojević
+        </h1>
+        <p data-aos="fade-right" data-aos-duration="2000" class="header-text">
+          Welcome To My Portfolio Website
+        </p>
+        <a class="btn btn-primary" href="#projects">
+          My Projects <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+    </header>
 
-    <nav id="nav" class="navbar top">
-      <h2 id="logo"><a href="#header-home"> My Portfolio</a></h2>
-      <ul>
-        <li><a href="#header-home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div id="header-content">
-      <h1 class="header-title" data-aos="fade-left" data-aos-duration="2000">I Am Dejan Ćetojević</h1>
-      <p data-aos="fade-right" data-aos-duration="2000" class="header-text">Welcome To My Portfolio Website</p>
-      <a class="btn btn-primary" href="#projects">
-        My Projects <i class="fas fa-chevron-right"></i>
-      </a>
-    </div>
-  </header>
-
-  <main>
-    <!-- About Section -->
-    <section id="about">
-      <div class="row">
-        <div class="column">
-          <div class="column-1">
-            <img src="./img/bg-test01.jpg" alt="computer">
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./img/bg-test01.jpg" alt="computer" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2">
+              <h4 data-aos="fade-left" data-aos-duration="2000">
+                I am new developer, ready to learn
+              </h4>
+              <h2>A geodetic engineer who is passionate about coding.</h2>
+              <p>
+                Reliable Intern studying Frontend development seeks an
+                internship opportunity to expand skills and gain valuable
+                real-world experience.
+              </p>
+              <a
+                href="https://resume.io/r/ASDhCIZ4R"
+                target="_blank"
+                class="btn btn-secundary"
+                ><i class="fas fa-paperclip"></i> View CV</a
+              >
+            </div>
           </div>
         </div>
-        <div class="column">
-          <div class="column-2">
-            <h4 data-aos="fade-left" data-aos-duration="2000">I am new developer, ready to learn</h4>
-            <h2>A geodetic engineer who is passionate about coding.</h2>
-            <p>Reliable Intern studying Frontend development seeks an internship opportunity to expand skills and gain
-              valuable real-world experience.</p>
-            <a href="https://resume.io/r/ASDhCIZ4R" target="_blank" class="btn btn-secundary"><i
-                class="fas fa-paperclip"></i> View CV</a>
-          </div>
+      </section>
+    </main>
+    <!-- Skills Section -->
+    <section data-aos="fade-up" data-aos-duration="2000" id="skills">
+      <h1>My Skills</h1>
+      <div class="flex-items">
+        <div>
+          <img src="/img/HTML.png" alt="html" loading="lazy" />
+          <p>HTML 5</p>
+        </div>
+        <div>
+          <img src="/img/CSS.png" alt="css" loading="lazy" />
+          <p>CSS 3</p>
+        </div>
+        <div>
+          <img src="/img/JS.png" alt="JavaScript" loading="lazy" />
+          <p>JavaScript</p>
+        </div>
+        <div>
+          <img src="/img/SASS.png" alt="sass" loading="lazy" />
+          <p>SASS</p>
+        </div>
+        <div>
+          <img src="/img/bootstrap.svg" alt="css" loading="lazy" />
+          <p>Bootstrap</p>
+        </div>
+        <div>
+          <img src="/img/GIT.png" alt="git" loading="lazy" />
+          <p>GIT</p>
+        </div>
+        <div id="react">
+          <img src="/img/react1.png" alt="react" loading="lazy" />
+          <p>REACT</p>
+        </div>
+        <div>
+          <img src="/img/vue.png" alt="vue" loading="lazy" />
+          <p>VUE</p>
         </div>
       </div>
+
+      <!-- Projects -->
     </section>
-  </main>
-  <!-- Skills Section -->
-  <section data-aos="fade-up" data-aos-duration="2000" id="skills">
-    <h1>My Skills</h1>
-    <div class="flex-items">
-      <div>
-        <img src="/img/HTML.png" alt="html" loading="lazy">
-        <p>HTML 5</p>
-      </div>
-      <div>
-        <img src="/img/CSS.png" alt="css" loading="lazy">
-        <p>CSS 3</p>
-      </div>
-      <div>
-        <img src="/img/JS.png" alt="JavaScript" loading="lazy">
-        <p>JavaScript</p>
-      </div>
-      <div>
-        <img src="/img/SASS.png" alt="sass" loading="lazy">
-        <p>SASS</p>
-      </div>
-      <div>
-        <img src="/img/bootstrap.svg" alt="css" loading="lazy">
-        <p>Bootstrap</p>
-      </div>
-      <div>
-        <img src="/img/GIT.png" alt="git" loading="lazy">
-        <p>GIT</p>
-      </div>
-      <div id="react">
-        <img src="/img/react1.png" alt="git" loading="lazy">
-        <!-- Loader -->
-        <img class="skill-loader" src="/img/loading_symbol1.gif" alt="git" loading="lazy">
-        <p>REACT</p>
-      </div>
-    </div>
+    <div data-aos="fade-up" data-aos-duration="2000" class="bottom-line"></div>
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="grid">
+        <div class="grid-item">
+          <img
+            src="./img/project_1.png"
+            alt="project 9 picture"
+            loading="lazy"
+          />
+          <div class="project-flex">
+            <div class="flex-1">
+              <h4 class="name-project">Movie Box</h4>
+              <p class="skills-used">
+                <i class="fas fa-caret-right"></i> HTML CSS JS API
+              </p>
+            </div>
+            <div class="flex-2">
+              <a href="https://movie-box-search.netlify.app/" target="_blank"
+                ><i class="far fa-eye fa-2x"></i
+              ></a>
+              <a
+                href="https://github.com/dejan1992/movie-box-search"
+                target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./img/project_2.png"
+            alt="project 8 picture"
+            loading="lazy"
+          />
+          <div class="project-flex">
+            <div class="flex-1">
+              <h4 class="name-project">Dental Clinic</h4>
+              <p class="skills-used">
+                <i class="fas fa-caret-right"></i> HTML CSS JS
+              </p>
+            </div>
+            <div class="flex-2">
+              <a href="https://markovicdent.netlify.app/" target="_blank"
+                ><i class="far fa-eye fa-2x"></i
+              ></a>
+              <a
+                href="https://github.com/dejan1992/Markovic-Dental-Clinic"
+                target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./img/project_8.png"
+            alt="project 7 picture"
+            loading="lazy"
+          />
+          <div class="project-flex">
+            <div class="flex-1">
+              <h4 class="name-project">SMOKE Inc.</h4>
+              <p class="skills-used">
+                <i class="fas fa-caret-right"></i> HTML CSS/SASS JS
+              </p>
+            </div>
+            <div class="flex-2">
+              <a href="https://smokeinc.netlify.app/" target="_blank"
+                ><i class="far fa-eye fa-2x"></i
+              ></a>
+              <a href="https://github.com/dejan1992/SMOKE-Inc" target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./img/project_9.png"
+            alt="project 6 picture"
+            loading="lazy"
+          />
+          <div class="project-flex">
+            <div class="flex-1">
+              <h4 class="name-project">COVID Tracker</h4>
+              <p class="skills-used">
+                <i class="fas fa-caret-right"></i> HTML CSS JS API
+              </p>
+            </div>
+            <div class="flex-2">
+              <a href="https://coronaworldtracker.netlify.app/" target="_blank"
+                ><i class="far fa-eye fa-2x"></i
+              ></a>
+              <a
+                href="https://github.com/dejan1992/Corona-tracker/tree/master"
+                target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img
+            src="./img/project_10.png"
+            alt="project 5 picture"
+            loading="lazy"
+          />
+          <div class="project-flex">
+            <div class="flex-1">
+              <h4 class="name-project">CoinInvest</h4>
+              <p class="skills-used">
+                <i class="fas fa-caret-right"></i> HTML CSS JS API
+              </p>
+            </div>
+            <div class="flex-2">
+              <a href="https://coininvest.netlify.app/" target="_blank"
+                ><i class="far fa-eye fa-2x"></i
+              ></a>
+              <a href="https://github.com/dejan1992/CoinInvest" target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
 
-    <!-- Projects -->
-  </section>
-  <div data-aos="fade-up" data-aos-duration="2000" class=" bottom-line"></div>
-  <section id="projects">
-    <h1>Projects</h1>
-    <div class="grid">
-      <div class="grid-item">
-        <img src="./img/project_1.png" alt="project 9 picture" loading="lazy">
-        <div class="project-flex">
-          <div class="flex-1">
-            <h4 class="name-project">Movie Box</h4>
-            <p class="skills-used"><i class="fas fa-caret-right"></i> HTML CSS JS API</p>
-          </div>
-          <div class="flex-2">
-            <a href="https://movie-box-search.netlify.app/" target="_blank"><i class="far fa-eye fa-2x"></i></a>
-            <a href="https://github.com/dejan1992/movie-box-search" target="_blank"><i
-                class="fab fa-github fa-2x"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="grid-item">
-        <img src="./img/project_2.png" alt="project 8 picture" loading="lazy">
-        <div class="project-flex">
-          <div class="flex-1">
-            <h4 class="name-project">Dental Clinic</h4>
-            <p class="skills-used"><i class="fas fa-caret-right"></i> HTML CSS JS</p>
-          </div>
-          <div class="flex-2">
-            <a href="https://markovicdent.netlify.app/" target="_blank"><i class="far fa-eye fa-2x"></i></a>
-            <a href="https://github.com/dejan1992/Markovic-Dental-Clinic" target="_blank"><i
-                class="fab fa-github fa-2x"></i></a>
+        <div class="grid-item">
+          <img
+            src="./img/project_12.PNG"
+            alt="project 3 picture"
+            loading="lazy"
+          />
+          <div class="project-flex">
+            <div class="flex-1">
+              <h4 class="name-project">WESTWeb</h4>
+              <p class="skills-used">
+                <i class="fas fa-caret-right"></i> HTML CSS/SASS JS
+              </p>
+            </div>
+            <div class="flex-2">
+              <a href="https://westweb.netlify.app" target="_blank"
+                ><i class="far fa-eye fa-2x"></i
+              ></a>
+              <a href="https://github.com/dejan1992/WESTWeb" target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="grid-item">
-        <img src="./img/project_8.png" alt="project 7 picture" loading="lazy">
-        <div class="project-flex">
-          <div class="flex-1">
-            <h4 class="name-project">SMOKE Inc.</h4>
-            <p class="skills-used"><i class="fas fa-caret-right"></i> HTML CSS/SASS JS</p>
-          </div>
-          <div class="flex-2">
-            <a href="https://smokeinc.netlify.app/" target="_blank"><i class="far fa-eye fa-2x"></i></a>
-            <a href="https://github.com/dejan1992/SMOKE-Inc" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="grid-item">
-        <img src="./img/project_9.png" alt="project 6 picture" loading="lazy">
-        <div class="project-flex">
-          <div class="flex-1">
-            <h4 class="name-project">COVID Tracker</h4>
-            <p class="skills-used"><i class="fas fa-caret-right"></i> HTML CSS JS API</p>
-          </div>
-          <div class="flex-2">
-            <a href="https://coronaworldtracker.netlify.app/" target="_blank"><i class="far fa-eye fa-2x"></i></a>
-            <a href="https://github.com/dejan1992/Corona-tracker/tree/master" target="_blank"><i
-                class="fab fa-github fa-2x"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="grid-item">
-        <img src="./img/project_10.png" alt="project 5 picture" loading="lazy">
-        <div class="project-flex">
-          <div class="flex-1">
-            <h4 class="name-project">CoinInvest</h4>
-            <p class="skills-used"><i class="fas fa-caret-right"></i> HTML CSS JS API</p>
-          </div>
-          <div class="flex-2">
-            <a href="https://coininvest.netlify.app/" target="_blank"><i class="far fa-eye fa-2x"></i></a>
-            <a href="https://github.com/dejan1992/CoinInvest" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-          </div>
-        </div>
-      </div>
 
-      <div class="grid-item">
-        <img src="./img/project_12.PNG" alt="project 3 picture" loading="lazy">
-        <div class="project-flex">
-          <div class="flex-1">
-            <h4 class="name-project">WESTWeb</h4>
-            <p class="skills-used"><i class="fas fa-caret-right"></i> HTML CSS/SASS JS</p>
-          </div>
-          <div class="flex-2">
-            <a href="https://westweb.netlify.app" target="_blank"><i class="far fa-eye fa-2x"></i></a>
-            <a href="https://github.com/dejan1992/WESTWeb" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <img src="./img/project_11.PNG" alt="project 1 picture" loading="lazy">
-        <div class="project-flex">
-          <div class="flex-1">
-            <h4 class="name-project">Exclusive - Rent A Car Company</h4>
-            <p class="skills-used"><i class="fas fa-caret-right"></i> HTML Bootstrap JS</p>
-          </div>
-          <div class="flex-2">
-            <a href="https://exclusivecars.netlify.app/" target="_blank"><i class="far fa-eye fa-2x"></i></a>
-            <a href="https://github.com/dejan1992/Exclusive-Rent-A-Car/tree/master" target="_blank"><i
-                class="fab fa-github fa-2x"></i></a>
+        <div class="grid-item">
+          <img
+            src="./img/project_11.PNG"
+            alt="project 1 picture"
+            loading="lazy"
+          />
+          <div class="project-flex">
+            <div class="flex-1">
+              <h4 class="name-project">Exclusive - Rent A Car Company</h4>
+              <p class="skills-used">
+                <i class="fas fa-caret-right"></i> HTML Bootstrap JS
+              </p>
+            </div>
+            <div class="flex-2">
+              <a href="https://exclusivecars.netlify.app/" target="_blank"
+                ><i class="far fa-eye fa-2x"></i
+              ></a>
+              <a
+                href="https://github.com/dejan1992/Exclusive-Rent-A-Car/tree/master"
+                target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="grid-item">
-        <img src="./img/project_13a.png" alt="project 4 picture" loading="lazy">
-        <div class="project-flex">
-          <div class="flex-1">
-            <h4 class="name-project">ISS Position</h4>
-            <p class="skills-used"><i class="fas fa-caret-right"></i> HTML CSS/SASS JS API</p>
-          </div>
-          <div class="flex-2">
-            <a href="https://isspositionmap.netlify.app/" target="_blank"><i class="far fa-eye fa-2x"></i></a>
-            <a href="https://github.com/dejan1992/ISS-position" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        <div class="grid-item">
+          <img
+            src="./img/project_13a.png"
+            alt="project 4 picture"
+            loading="lazy"
+          />
+          <div class="project-flex">
+            <div class="flex-1">
+              <h4 class="name-project">ISS Position</h4>
+              <p class="skills-used">
+                <i class="fas fa-caret-right"></i> HTML CSS/SASS JS API
+              </p>
+            </div>
+            <div class="flex-2">
+              <a href="https://isspositionmap.netlify.app/" target="_blank"
+                ><i class="far fa-eye fa-2x"></i
+              ></a>
+              <a
+                href="https://github.com/dejan1992/ISS-position"
+                target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="grid-item">
-        <img src="./img/project_3.png" alt="project 4 picture" loading="lazy">
-        <div class="project-flex">
-          <div class="flex-1">
-            <h4 class="name-project">New York Times Articles</h4>
-            <p class="skills-used"><i class="fas fa-caret-right"></i> HTML CSS JS API</p>
-          </div>
-          <div class="flex-2">
-            <a href="https://newyorktimesarticles.netlify.app/" target="_blank"><i class="far fa-eye fa-2x"></i></a>
-            <a href="https://github.com/dejan1992/new-york-times-articles/tree/master" target="_blank"><i
-                class="fab fa-github fa-2x"></i></a>
+        <div class="grid-item">
+          <img
+            src="./img/project_3.png"
+            alt="project 4 picture"
+            loading="lazy"
+          />
+          <div class="project-flex">
+            <div class="flex-1">
+              <h4 class="name-project">New York Times Articles</h4>
+              <p class="skills-used">
+                <i class="fas fa-caret-right"></i> HTML CSS JS API
+              </p>
+            </div>
+            <div class="flex-2">
+              <a
+                href="https://newyorktimesarticles.netlify.app/"
+                target="_blank"
+                ><i class="far fa-eye fa-2x"></i
+              ></a>
+              <a
+                href="https://github.com/dejan1992/new-york-times-articles/tree/master"
+                target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- <div class="grid-item">
+        <!-- <div class="grid-item">
         <img src="./img/project_4.png" alt="project 2 picture" loading="lazy">
         <div class="project-flex">
           <div class="flex-1">
@@ -250,84 +373,130 @@
           </div>
         </div>
       </div> -->
-
-    </div>
-  </section>
-  <br>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h1>Contact Me</h1>
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-      <input id="hidden" type="hidden" name="form-name" value="contact">
-      <p class="hidden">
-        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-      </p>
-      <div class="row">
-        <div class="input50">
-          <label for="first-name">First Name</label>
-          <input name="first-name" id="first-name" type="text" placeholder="First Name" required>
-        </div>
-        <div class="input50">
-          <label for="last-name">Last Name</label>
-          <input name="last-name" id="last-name" type="text" placeholder="Last Name" required>
-        </div>
       </div>
-      <div class="row">
-        <div class="input50">
-          <label for="email">Email</label>
-          <input name="email" id="email" type="email" placeholder="Email" required>
+    </section>
+    <br />
+
+    <!-- Contact -->
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
+        <input id="hidden" type="hidden" name="form-name" value="contact" />
+        <p class="hidden">
+          <label
+            >Don’t fill this out if you’re human: <input name="bot-field"
+          /></label>
+        </p>
+        <div class="row">
+          <div class="input50">
+            <label for="first-name">First Name</label>
+            <input
+              name="first-name"
+              id="first-name"
+              type="text"
+              placeholder="First Name"
+              required
+            />
+          </div>
+          <div class="input50">
+            <label for="last-name">Last Name</label>
+            <input
+              name="last-name"
+              id="last-name"
+              type="text"
+              placeholder="Last Name"
+              required
+            />
+          </div>
         </div>
-        <div class="input50">
-          <label for="subject">Subject</label>
-          <input name="subject" type="text" placeholder="Subject">
+        <div class="row">
+          <div class="input50">
+            <label for="email">Email</label>
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="input50">
+            <label for="subject">Subject</label>
+            <input name="subject" type="text" placeholder="Subject" />
+          </div>
         </div>
+        <div class="row">
+          <div class="input100">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              placeholder="Message"
+              id="message"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input100">
+            <input
+              id="submit"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              type="submit"
+              value="Send"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer-->
+    <footer id="footer">
+      <div id="footer-l">
+        <h2>My Portfolio</h2>
       </div>
-      <div class="row">
-        <div class="input100">
-          <label for="message">Message</label>
-          <textarea name="message" placeholder="Message" id="message" required></textarea>
-        </div>
+      <div id="footer-m">
+        <p><i class="fas fa-envelope"></i> cetojevic.d92@gmail.com</p>
+        <p><i class="fas fa-mobile-alt"></i> +387 65 481 952</p>
       </div>
-      <div class="row">
-        <div class="input100">
-          <input id='submit' data-aos="fade-up" data-aos-duration="1000" type="submit" value="Send">
-        </div>
+      <div id="footer-r">
+        <h4>&copy;2021 Dejan Ćetojević</h4>
+        <ul>
+          <li>
+            <a href="https://github.com/dejan1992" target="_blank"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/dejan-%C4%87etojevi%C4%87-9298951b3"
+              target="_blank"
+              ><i class="fab fa-linkedin-in fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/dejan__dejo" target="_blank"
+              ><i class="fab fa-twitter fa-2x"></i
+            ></a>
+          </li>
+        </ul>
       </div>
-    </form>
-  </section>
 
-  <!-- Footer-->
-  <footer id="footer">
-    <div id="footer-l">
-      <h2>My Portfolio</h2>
-    </div>
-    <div id="footer-m">
-      <p><i class=" fas fa-envelope"></i> cetojevic.d92@gmail.com</p>
-      <p><i class=" fas fa-mobile-alt"></i> +387 65 481 952</p>
-    </div>
-    <div id="footer-r">
-      <h4>&copy;2021 Dejan Ćetojević</h4>
-      <ul>
-        <li><a href="https://github.com/dejan1992" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/dejan-%C4%87etojevi%C4%87-9298951b3" target="_blank"><i
-              class="fab fa-linkedin-in fa-2x"></i></a></li>
-        <li><a href="https://twitter.com/dejan__dejo" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
-      </ul>
-    </div>
+      <!-- Back home button -->
+      <div id="back-button">
+        <a href="#header-home"> <i class="fas fa-chevron-up fa-2x"></i></a>
+      </div>
+    </footer>
 
-    <!-- Back home button -->
-    <div id="back-button">
-      <a href="#header-home"> <i class="fas fa-chevron-up fa-2x"></i></a>
-    </div>
-  </footer>
-
-
-  <script src="app.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
