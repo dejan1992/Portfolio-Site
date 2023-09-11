@@ -297,7 +297,7 @@ header #header-content {
 
 /* Projects */
 #projects {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .grid {
